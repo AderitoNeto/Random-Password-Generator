@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Random Password Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script
+      src="https://kit.fontawesome.com/836a943e18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+<body>
+
+ <class class="main">
+
+<!-- top part -->
+  <div class="top">
+    <input type="text" id="output" readonly="true">
+    <input type="text" value="6" id="char_num">
+    <button onclick="copyFunction()"><i class="fa fa-clone"></i></button>
+  </div>
+ 		
+    <!-- details part -->
+    <div class="detail">
+      <p>Strength:</p>
+      <p id="strength"></p>
+    </div>
+        
+      <!--  all options -->
+        <div class="options">
+        	<ul>
+                <li>
+                  <input type="checkbox" id="capCheck">
+                  <label for="capCheck">Uppercase</label>
+                  <label for="numCheck" id="icon"></label>         
+                </li>
+
+        		<li>
+        		 <input type="checkbox" id="numCheck">		
+                 <label for="numCheck">Numbers</label>
+                 <label for="numCheck" id="icon"></label> 
+                </li>
+
+        		<li>
+        		  <input type="checkbox" id="symCheck">        		    
+                <label for="symCheck">Symbol</label>
+                <label for="numCheck" id="icon"></label> 
+        		</li>
+
+        		<li>
+        		   <input type="checkbox" id="smCheck"> 		     
+                <label for="smCheck">Lowercase</label>
+               <label for="numCheck" id="icon"></label> 
+        		</li>
+        	</ul>
+        </div>
+
+     <!-- password_generate button -->
+    <button onclick="generate()" id="password_generate">Generate Password</button>
+
+
+    <div class="container">
+      <a href="https://github.com/AderitoNeto/" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+      <a href="https://twitter.com/L1LNT" target="_blank">
+        <i class="fab fa-twitter"></i
+      ></a>
+      <a href="https://www.instagram.com/_clout.master_/" target="_blank">
+        <i class="fab fa-instagram"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/ad%C3%A9rito-neto-6740311b6/" target="_blank">
+        <i class="fab fa-linkedin"></i
+      ></a>
+  </div>
+
+</class>
+
+
+<!-- javascript file -->
+<script src="main.js"></script>
+
+<!-- THIS RANDOM PASSWORD GENERATOR WAS MADE BY ADÉRITO NETO -->
+
+</body>
+</html>
